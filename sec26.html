@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 26</title>
+    <link rel="stylesheet" href="sec26.css">
+</head>
+
+<body>
+    <div id="game-box">
+        <img src="https://technocom.asia/wp-content/uploads/2019/05/Ping_Pong.jpg" alt="Ping pong image" id="ping-img">
+        <p id="game-info">Ping pong score keeper</p>
+        <h2 id="scorecard" class="game-elements"></h2>
+        <p id="game-instructions" class="game-elements">Use the buttons to play the game</p>
+        <label for="choose-score" class="game-elements" id="score-label"><b>Playing to</b></label>
+        <select name="score" id="choose-score">
+            <option value="" selected disabled hidden>Choose the final score</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <section id="game-btns">
+            <button id="p1btn">+1 Player One</button>
+            <button id="p2btn">+1 Player Two</button>
+            <button id="restart">Reset</button>
+        </section>
+        <audio src="scoreSound.mp3" id="add-score"></audio>
+        <audio src="tie_breaker.mp3" id="tie-sound"></audio>
+        <audio src="win_sound.mp3" id="win-sound"></audio>
+    </div>
+    <script src="gameScript.js"></script>
+</body>
+
+</html>

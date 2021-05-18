@@ -1,0 +1,76 @@
+#ping-img{
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+#game-box{
+    width: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.win-color{
+    color: lawngreen;
+}
+
+.lose-color{
+    color: orangered;
+}
+
+#game-info{
+    margin: 0;
+    padding: 0.5rem;
+    padding-right: 0;
+    /* padding-bottom: 0.5rem; */
+    border-bottom: 1px solid dimgrey;
+}
+/* 
+#game-info::after{
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 0.8rem;
+    background-color: dimgrey;
+} */
+
+#scorecard{
+    margin-bottom: 0.5rem;
+}
+
+#game-instructions{
+    margin-top: 0;
+}
+
+#game-btns{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.game-elements{
+    padding-left: 10px;
+}
+
+#game-btns > button{
+    width: 33.3%;
+    height: 2.5rem;
+}
+
+#p1btn{
+    background-color: forestgreen;
+}
+
+#p2btn{
+    background-color: mediumslateblue;
+}
+
+#restart{
+    background-color: mediumvioletred;
+}
+
+.tie-animation{
+    transition: all 1s ease-out;
+    transform: scale(1.4) translate(30px) rotate(360deg);
+    background-color: deeppink;
+}
